@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dadbe2"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="softcare.akash.medicription.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/cardid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="#65ebfd88"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        rv_centered="true">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:tag="image_tag"
+                            android:onClick="Info"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/info"/>
+                    </com.andexert.library.RippleView>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card2"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="#6578fa69"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        rv_centered="true">
+
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:tag="image_tag"
+                            android:onClick="SpyCam"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/spy"/>
+                    </com.andexert.library.RippleView>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card5"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="#65ebfd88"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        rv_centered="true">
+
+                        <ImageView
+                            android:id="@+id/image5"
+                            android:tag="image_tag"
+                            android:onClick="Record"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/record"/>
+
+                    </com.andexert.library.RippleView>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardid3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card3"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="lockScreen"
+                    card_view:cardBackgroundColor="#6578fa69"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        rv_centered="true">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:tag="image_tag"
+                            android:onClick="lockScreen"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/lock"/>
+                    </com.andexert.library.RippleView>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card4"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="#65ebfd88"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        rv_centered="true">
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:tag="image_tag"
+                            android:onClick="TimerSMS"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/timer"/>
+                    </com.andexert.library.RippleView>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card6"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="#6578fa69"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        rv_centered="true">
+
+
+                        <ImageView
+                            android:id="@+id/image6"
+                            android:tag="image_tag"
+                            android:onClick="FakeCallSelect"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/fake"/>
+
+                    </com.andexert.library.RippleView>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
