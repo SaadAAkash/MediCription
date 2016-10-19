@@ -1,0 +1,154 @@
+PRIMARY_USER				
+-------------------------
+USER_ID			|
+EMAIL			|	// WILL SEND AN AUTOMATED EMAIL FOR COMPLETING THE PROFILE
+PASSWORD		|
+TYPE			|	// DOCTOR/PATIENT
+-------------------------
+
+DOCTOR					PATIENT
+-------------------------	--------------------------------
+DOCTOR_ID		|	|	PATIENT_ID		|
+NID			|	|	NID			|
+FIRST_NAME		|	|	FIRST_NAME		|
+LAST_NAME		|	|	LAST_NAME		|
+DOB			|	|	DOB			|
+PRESENT_ADDRESS		|	|	PRESENT_ADDRESS		|
+LICENSE_NO		|	|				|		
+CATEGORY		|	---------------------------------
+-------------------------
+
+HOSPITAL
+-------------------------
+HOSPITAL_ID		|
+NAME			|
+LOCATION		|
+DISTRICT		|
+-------------------------
+
+INSTITUTE
+-------------------------
+INSTITUTE_ID		|
+NAME			|
+LOCATION		|
+DISTRICT		|
+-------------------------
+
+DOCTOR_IMAGE
+-------------------------
+DOCTOR_ID		|
+PROFILE_IMAGE		|
+-------------------------
+
+DOCTOR_PUBLICATIONS
+-------------------------
+DOCTOR_ID		|
+PUBLICATION_NAME	|
+PUBLICATION_DATE	|
+PUBLICATION_LINK	|
+VARIFICATION		|
+-------------------------
+
+DOCTOR_AWARD
+-------------------------
+DOCTOR_ID		|
+AWARD_NAME		|
+SOURCE			|
+WEBSITE_LINK/NEWS_LINK	|
+-------------------------
+
+
+DOCTOR_HOSPITAL
+-------------------------
+DOCTOR_ID		|
+HOSPITAL_ID		|
+SCHEDULE		|
+JOIN_DATE		|
+LEAVE_DATE		|
+FEE_OR_VISIT		|
+-------------------------
+
+DOCTOR_EDUCATION
+-------------------------
+INSTITUTE_ID		|
+DOCTOR_ID		|
+JOIN_DATE		|
+LEAVE_DATE		|
+DEGREE_NAME		|
+-------------------------
+
+MEDICINE
+-------------------------
+MEDICINE_ID		|
+TYPE			|	SYRUP, TABLET, DROP, INJECTION etc
+NAME			|
+STRENGTH		|
+MANUFACTURER		|
+PRICE			|
+-------------------------
+
+TESTS
+-------------------------
+TEST_ID			|
+TEST_NAME		|
+TEST_TYPE		|
+-------------------------
+
+OPERATION
+-------------------------
+OPERATION_ID		|
+OPEATION_NAME		|
+OPERATION_TYPE		|
+-------------------------
+
+PRESCRIPTION
+-------------------------
+PRESCRIPTION_ID		|
+DOCTOR_ID		|
+PATIENT_ID		|
+PATIENT_BP		|
+PROBLEM_SUMMARY		|	
+DATE			|
+TIME			|
+PRIVACY			|
+-------------------------
+
+PRESCRIPTION_MEDICINE
+-------------------------
+PRESCRIPTION_ID		|
+MEDICINE_ID		|
+MEDICINE_TIME_SCHEDULE	|
+MEDICINE_DURATION	|
+COMMENTS		|
+-------------------------
+
+PRESCRIPTION_TESTS
+-------------------------
+PRESCRIPTION_ID		|
+TEST_ID			|
+SPECIAL_REQUIREMENTS	|
+COMMENTS		|
+-------------------------
+
+PRESCRIPTION_OPERATION
+-------------------------
+PRESCRIPTION_ID		|
+OPERATION_ID		|
+SCHEDULED_TIME		|
+SPECIAL_REQUIREMENTS	|
+COMMENTS		|
+-------------------------
+
+DOCTOR_RATING
+-------------------------
+RATING_ID		|
+DOCTOR_ID		|
+PATIENT_ID		|
+RATING			|
+DATE			|
+COMMENT			|
+-------------------------
+
+
+
+
